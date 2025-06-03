@@ -10,6 +10,7 @@
 	--color-blue-prime: #2f68b9;
 	--color-blue-second: #377cdd;
 	--color-blue-tert: #3c88f3;
+	--border-radius-small: 8px;
 	--font-light: 300;
 	--font-normal: 400;
 	--font-bold: 600;
@@ -26,11 +27,13 @@ body {
 /* Profile (header) */
 .ingress_header {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	min-height: 40vh;
+	min-height: 445px;
 	padding: 2rem;
 	background-color: var(--light-grey-bg);
+	position: relative;
+	overflow: hidden;
 }
 
 .ingress_container {
@@ -38,8 +41,9 @@ body {
 	align-items: center;
 	gap: 2rem;
 	max-width: 900px;
-	width: auto;
 	margin: 0 auto;
+	margin-top: 100px;
+	transition: transform 0.4s ease;
 }
 
 .ingress_header img {
@@ -50,6 +54,7 @@ body {
 	object-position: center;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease;
+	cursor: pointer;
 }
 
 .ingress_header img:hover {
@@ -87,7 +92,7 @@ body {
 	padding: 0.5rem 1.2rem;
 	background-color: var(--color-blue-prime);
 	color: var(--color-text-white);
-	border-radius: 8px;
+	border-radius: var(--border-radius-small);
 	text-decoration: none;
 	font-family: var(--font-1), var(--font-fallback);
 	transition: background-color 0.3s;
@@ -95,4 +100,68 @@ body {
 
 .cta-buttons a:hover {
 	background-color: var(--color-blue-tert);
+}
+
+/* Bio (header) */
+.bio-box {
+	background-color: var(--color-secondary);
+	padding: 0.5rem 1.5rem;
+	border-radius: var(--border-radius-small);
+	max-width: 470px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	font-size: var(--text-size-normal);
+	color: var(--color-text-white);
+	font-family: var(--font-1), var(--font-fallback);
+	text-align: left;
+}
+
+/* visible state */
+.bio-box.show {
+	display: block;
+	opacity: 1;
+}
+
+/* hidden state */
+.bio-box.hidden {
+	display: none;
+}
+
+.ingress_container.slide-up {
+	transform: translateY(-40px);
+}
+
+@media (max-width: 768px) {
+	.ingress_container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.ingress_container img {
+		margin-bottom: 1rem;
+	}
+
+	.header_text h1 {
+		font-size: 1.5rem;
+	}
+
+	.header_text p {
+		font-size: 14px;
+	}
+
+	.cta-buttons {
+		margin-top: 1rem;
+	}
+
+	.cta-buttons a {
+		display: block;
+		margin: 0.5rem auto;
+		width: fit-content;
+	}
+
+	.bio-box {
+		padding: 1rem;
+		font-size: 14px;
+	}
 }
