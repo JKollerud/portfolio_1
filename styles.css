@@ -1,0 +1,98 @@
+/* Profile (header) */
+:root {
+	--font-1: "Inter Tight";
+	--font-fallback: sans-serif;
+	--light-grey-bg: #ececec;
+	--color-primary: #2a2a2a;
+	--color-secondary: #636363;
+	--color-tertiary: #959595;
+	--color-text-white: #dadada;
+	--color-blue-prime: #2f68b9;
+	--color-blue-second: #377cdd;
+	--color-blue-tert: #3c88f3;
+	--font-light: 300;
+	--font-normal: 400;
+	--font-bold: 600;
+	--text-size-small: 11px;
+	--text-size-normal: 14px;
+	--text-size-medium: 18px;
+	--text-size-large: 22px;
+}
+
+body {
+	margin: 0;
+}
+
+/* Profile (header) */
+.ingress_header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40vh;
+	padding: 2rem;
+	background-color: var(--light-grey-bg);
+}
+
+.ingress_container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	max-width: 900px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.ingress_header img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.ingress_header img:hover {
+	box-shadow: 0 0 15px var(--color-blue-tert);
+}
+
+.header_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.header_text h1 {
+	margin: 0;
+	font-family: var(--font-1), var(--font-fallback);
+	color: var(--color-primary);
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.header_text p {
+	margin: 0.5rem 0;
+	font-size: var(--text-size-normal);
+	color: var(--color-secondary);
+	font-family: var(--font-1), var(--font-fallback);
+}
+
+.cta-buttons {
+	margin-top: 1.5rem;
+}
+
+.cta-buttons a {
+	margin-right: 1rem;
+	padding: 0.5rem 1.2rem;
+	background-color: var(--color-blue-prime);
+	color: var(--color-text-white);
+	border-radius: 8px;
+	text-decoration: none;
+	font-family: var(--font-1), var(--font-fallback);
+	transition: background-color 0.3s;
+}
+
+.cta-buttons a:hover {
+	background-color: var(--color-blue-tert);
+}
