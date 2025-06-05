@@ -43,11 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	profileImage.addEventListener("click", () => {
-		fadeToBox(contactBox, bioBox);
+		if (bioBox.classList.contains("show")) {
+			closeBox(bioBox);
+		} else {
+			fadeToBox(contactBox, bioBox);
+		}
 	});
 
 	contactButton.addEventListener("click", () => {
-		fadeToBox(bioBox, contactBox);
+		if (contactBox.classList.contains("show")) {
+			closeBox(contactBox);
+		} else {
+			fadeToBox(bioBox, contactBox);
+		}
 	});
 
 	document.addEventListener("click", (e) => {
