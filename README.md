@@ -14,7 +14,7 @@ This project is a personal portfolio website designed to present my work, backgr
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+This project uses the following technologies:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
