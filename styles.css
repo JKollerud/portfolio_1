@@ -231,6 +231,62 @@ html {
 	color: var(--color-blue-tert);
 }
 
+/* Footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 445px;
+	padding: 2rem;
+	background-color: var(--light-grey-bg);
+}
+
+.footer h3 {
+	font-family: var(--font-1), var(--font-fallback);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.connect_footer {
+	margin-top: 40px;
+}
+
+.connect_footer a {
+	display: flex;
+	gap: 2rem;
+	padding: 1.5rem;
+	text-decoration: none;
+	font-family: var(--font-1), var(--font-fallback);
+	color: var(--color-secondary);
+}
+
+.connect_footer i {
+	font-size: var(--text-size-large);
+	color: var(--color-primary);
+}
+
+.connect_footer a:hover {
+	color: var(--color-primary);
+}
+
+.footer_button {
+	margin-top: 35px;
+}
+
+.footer_button a {
+	padding: 0.5rem 1.2rem;
+	background-color: var(--color-blue-prime);
+	color: var(--color-text-white);
+	border-radius: var(--border-radius-small);
+	text-decoration: none;
+	font-family: var(--font-1), var(--font-fallback);
+	transition: background-color 0.3s;
+}
+
+.footer_button a:hover {
+	background-color: var(--color-blue-tert);
+}
+
 @media (max-width: 768px) {
 	.ingress_container {
 		flex-direction: column;

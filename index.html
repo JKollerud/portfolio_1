@@ -20,10 +20,11 @@
 		<link rel="manifest" href="/site.webmanifest" />
 		<link rel="stylesheet" href="styles.css" />
 		<script src="script.js"></script>
-		<title>Joakim Kollerud - Portofolio</title>
+		<script src="https://kit.fontawesome.com/3f2533518e.js" crossorigin="anonymous"></script>
+		<title>Joakim Kollerud - Portfolio</title>
 	</head>
 	<body>
-		<header class="ingress_header">
+		<header class="ingress_header" id="top">
 			<div class="ingress_container" id="ingressContainer">
 				<img id="profileImage" src="/img/portrett_bilde_sh.jpg" alt="Joakim Kollerud" />
 				<div class="header_text">
@@ -54,13 +55,18 @@
 				</p>
 				<p>
 					LinkedIn:
-					<a href="https://linkedin.com/in/joakim-kollerud-723803369" target="_blank">
+					<a
+						href="https://linkedin.com/in/joakim-kollerud-723803369"
+						target="_blank"
+						rel="noopener norefferer">
 						linkedin.com/in/joakim-kollerud-723803369
 					</a>
 				</p>
 				<p>
 					GitHub:
-					<a href="https://github.com/JKollerud" target="_blank">github.com/JKollerud</a>
+					<a href="https://github.com/JKollerud" target="_blank" rel="noopener norefferer">
+						github.com/JKollerud
+					</a>
 				</p>
 			</div>
 		</header>
@@ -102,6 +108,31 @@
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<section>
+				<div class="footer_button">
+					<a href="#top">Back to top</a>
+				</div>
+			</section>
+			<section class="connect_footer">
+				<h3>Connect</h3>
+				<a href="mailto:j_kollerud@hotmail.com">
+					<i class="fa-solid fa-envelope"></i>
+					Email
+				</a>
+				<a href="https://www.instagram.com/skrollefanten" target="_blank" rel="noopener norefferer">
+					<i class="fa-brands fa-instagram"></i>
+					Instagram
+				</a>
+				<a href="https://linkedin.com/in/joakim-kollerud-723803369" target="_blank" rel="noopener norefferer">
+					<i class="fa-brands fa-linkedin"></i>
+					LinkedIn
+				</a>
+				<a href="https://github.com/JKollerud" target="_blank" rel="noopener norefferer">
+					<i class="fa-brands fa-github"></i>
+					GitHub
+				</a>
+			</section>
+		</footer>
 	</body>
 </html>
