@@ -2,6 +2,9 @@
 
 A sleek, responsive portfolio website to showcase my skills, projects, and contact information. Built to demonstrate both front-end development ability and personal branding.
 
+Live-server:
+https://joakol-portfolio.netlify.app/
+
 ## Description
 
 This project is a personal portfolio website designed to present my work, background, and contact options in a clean and engaging way. It includes:
