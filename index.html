@@ -1,138 +1,242 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Portfolio of Joakim Kollerud, a frontend developer creating modern, user-friendly websites and web apps." />
-		<meta
-			name="keywords"
-			content="Joakim Kollerud, frontend developer, web developer, portfolio, HTML, CSS, JavaScript, Tailwind, Figma" />
-		<meta name="author" content="Joakim Kollerud" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet" />
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="stylesheet" href="styles.css" />
-		<script src="script.js"></script>
-		<script src="https://kit.fontawesome.com/3f2533518e.js" crossorigin="anonymous"></script>
-		<title>Joakim Kollerud - Portfolio</title>
-	</head>
-	<body>
-		<header class="ingress_header" id="top">
-			<div class="ingress_container" id="ingressContainer">
-				<img id="profileImage" src="/img/portrett_bilde_sh.jpg" alt="Joakim Kollerud" />
-				<div class="header_text">
-					<h1>Joakim Kollerud</h1>
-					<p>Frontend Developer & Web Enthusiast</p>
-					<div class="cta-buttons">
-						<a href="#projects">View Projects</a>
-						<a href="#contact" id="contactButton">Contact Me</a>
-					</div>
-				</div>
-			</div>
-			<div id="bioBox" class="bio-box hidden">
-				<p>
-					I'm a frontend developer passionate about creating clean, user-focused digital experiences. Over the
-					past couple of years, I've dedicated myself to learning modern web technologies like HTML, CSS,
-					JavaScript, React, and Tailwind CSS.
-				</p>
-				<p>
-					While I'm not yet working professionally, I've built a portfolio of some of the personal projects
-					I've made. I'm now actively looking for my first full-time role where I can grow, contribute, and
-					keep building elegant, performant user interfaces.
-				</p>
-			</div>
-			<div id="contactBox" class="hidden">
-				<p>
-					Email:
-					<a href="mailto:j_kollerud@hotmail.com">j_kollerud@hotmail.com</a>
-				</p>
-				<p>
-					LinkedIn:
-					<a
-						href="https://linkedin.com/in/joakim-kollerud-723803369"
-						target="_blank"
-						rel="noopener norefferer">
-						linkedin.com/in/joakim-kollerud-723803369
-					</a>
-				</p>
-				<p>
-					GitHub:
-					<a href="https://github.com/JKollerud" target="_blank" rel="noopener norefferer">
-						github.com/JKollerud
-					</a>
-				</p>
-			</div>
-		</header>
-		<main>
-			<section class="projects" id="projects">
-				<h2>My Projects</h2>
-				<div class="project_card">
-					<img src="/img/howviewlabs_screenshot.jpg" alt="Screenshot of HowView Labs homepage" />
-					<h3>HowView Labs</h3>
-					<p>
-						A responsive and accessible tech blog where users can post, read and explore the latest in
-						technology and data. Built using HTML, CSS and JS.
-					</p>
-					<a href="https://statuesque-cassata-03cc8f.netlify.app" target="_blank">Live Demo</a>
-					<a href="https://github.com/JKollerud/FED1-PE1-JKollerud-fork" target="_blank">Source Code</a>
-				</div>
-				<div class="project_card">
-					<img
-						src="/img/community_science_museum_screenshot.jpg"
-						alt="Screenshot of Community Science Museum homepage" />
-					<h3>Community Science Museum</h3>
-					<p>
-						An interactive science museum website. This site showcases what the museum has to offer with the
-						goal of in-person visits. Built using HTML and CSS.
-					</p>
-					<a href="https://communitysciencem.netlify.app" target="_blank">Live Demo</a>
-					<a href="https://github.com/JKollerud/Fed1-sp1-csm" target="_blank">Source Code</a>
-				</div>
-				<div class="project_card">
-					<img src="/img/rainydays_screenshot.jpg" alt="Screenshot of Rainydays homepage" />
-					<h3>Rainydays</h3>
-					<p>
-						A stylish and durable e-commerce site for everyday outerwear. This site showcases a collection
-						of affordable, weather-ready jackets with a focus on usability and design. Built using HTML and
-						CSS.
-					</p>
-					<a href="https://rainydaysclothing.netlify.app" target="_blank">Live Demo</a>
-					<a href="https://github.com/JKollerud/fed1-html-css-ca" target="_blank">Source Code</a>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<section>
-				<div class="footer_button">
-					<a href="#top">Back to top</a>
-				</div>
-			</section>
-			<section class="connect_footer">
-				<h3>Connect</h3>
-				<a href="mailto:j_kollerud@hotmail.com">
-					<i class="fa-solid fa-envelope"></i>
-					Email
-				</a>
-				<a href="https://www.instagram.com/skrollefanten" target="_blank" rel="noopener norefferer">
-					<i class="fa-brands fa-instagram"></i>
-					Instagram
-				</a>
-				<a href="https://linkedin.com/in/joakim-kollerud-723803369" target="_blank" rel="noopener norefferer">
-					<i class="fa-brands fa-linkedin"></i>
-					LinkedIn
-				</a>
-				<a href="https://github.com/JKollerud" target="_blank" rel="noopener norefferer">
-					<i class="fa-brands fa-github"></i>
-					GitHub
-				</a>
-			</section>
-		</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Joakim Kollerud, a frontend developer creating modern, user-friendly websites and web apps."
+    />
+    <meta
+      name="keywords"
+      content="Joakim Kollerud, frontend developer, web developer, portfolio, HTML, CSS, JavaScript, Tailwind, Figma"
+    />
+    <meta name="author" content="Joakim Kollerud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3f2533518e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Joakim Kollerud - Portfolio</title>
+  </head>
+  <body>
+    <header class="ingress_header" id="top">
+      <div class="ingress_container" id="ingressContainer">
+        <img
+          id="profileImage"
+          src="/img/portrett_bilde_sh.jpg"
+          alt="Joakim Kollerud"
+        />
+        <div class="header_text">
+          <h1>Joakim Kollerud</h1>
+          <p>Frontend Developer & Web Enthusiast</p>
+          <div class="cta-buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact" id="contactButton">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <div id="bioBox" class="bio-box hidden">
+        <p>
+          I'm a frontend developer passionate about creating clean, user-focused
+          digital experiences. Over the past couple of years, I've dedicated
+          myself to learning modern web technologies like HTML, CSS, JavaScript,
+          React, and Tailwind CSS.
+        </p>
+        <p>
+          While I'm not yet working professionally, I've built a portfolio of
+          some of the personal projects I've made. I'm now actively looking for
+          my first full-time role where I can grow, contribute, and keep
+          building elegant, performant user interfaces.
+        </p>
+      </div>
+      <div id="contactBox" class="hidden">
+        <p>
+          Email:
+          <a href="mailto:j_kollerud@hotmail.com">j_kollerud@hotmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://linkedin.com/in/joakim-kollerud-723803369"
+            target="_blank"
+            rel="noopener norefferer"
+          >
+            linkedin.com/in/joakim-kollerud-723803369
+          </a>
+        </p>
+        <p>
+          GitHub:
+          <a
+            href="https://github.com/JKollerud"
+            target="_blank"
+            rel="noopener norefferer"
+          >
+            github.com/JKollerud
+          </a>
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project_card">
+          <img
+            src="/img/nordholmauctions.jpg"
+            alt="Screenshot of Nordholm Auction House"
+          />
+          <h3>Nordholm Auction House</h3>
+          <p>
+            A modern auction platform built with HTML, Tailwind CSS, and vanilla
+            JavaScript, fully integrated with the Noroff Auction API. Users can
+            register, log in, create listings, bid on items, edit their profile,
+            and browse auctions in a clean and elegant UI.
+          </p>
+          <a href="https://semesterproject2jk.netlify.app/" target="_blank"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/JKollerud/semesterProject2"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+        <div class="project_card">
+          <img src="/img/supabase_logo.jpg" alt="Supabase logo icon" />
+          <h3>Frontend with Supabase</h3>
+          <p>
+            A functional news platform demonstrating modern web development
+            practices, user authentication and data management.
+          </p>
+          <a
+            href="https://github.com/JKollerud/development-platforms-ca"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+        <div class="project_card">
+          <img
+            src="/img/howviewlabs_screenshot.jpg"
+            alt="Screenshot of HowView Labs homepage"
+          />
+          <h3>HowView Labs</h3>
+          <p>
+            A responsive and accessible tech blog where users can post, read and
+            explore the latest in technology and data. Built using HTML, CSS and
+            JS.
+          </p>
+          <a
+            href="https://statuesque-cassata-03cc8f.netlify.app"
+            target="_blank"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/JKollerud/FED1-PE1-JKollerud-fork"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+        <div class="project_card">
+          <img
+            src="/img/community_science_museum_screenshot.jpg"
+            alt="Screenshot of Community Science Museum homepage"
+          />
+          <h3>Community Science Museum</h3>
+          <p>
+            An interactive science museum website. This site showcases what the
+            museum has to offer with the goal of in-person visits. Built using
+            HTML and CSS.
+          </p>
+          <a href="https://communitysciencem.netlify.app" target="_blank"
+            >Live Demo</a
+          >
+          <a href="https://github.com/JKollerud/Fed1-sp1-csm" target="_blank"
+            >Source Code</a
+          >
+        </div>
+        <div class="project_card">
+          <img
+            src="/img/rainydays_screenshot.jpg"
+            alt="Screenshot of Rainydays homepage"
+          />
+          <h3>Rainydays</h3>
+          <p>
+            A stylish and durable e-commerce site for everyday outerwear. This
+            site showcases a collection of affordable, weather-ready jackets
+            with a focus on usability and design. Built using HTML and CSS.
+          </p>
+          <a href="https://rainydaysclothing.netlify.app" target="_blank"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/JKollerud/fed1-html-css-ca"
+            target="_blank"
+            >Source Code</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section>
+        <div class="footer_button">
+          <a href="#top">Back to top</a>
+        </div>
+      </section>
+      <section class="connect_footer">
+        <h3>Connect</h3>
+        <a href="mailto:j_kollerud@hotmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          Email
+        </a>
+        <a
+          href="https://www.instagram.com/skrollefanten"
+          target="_blank"
+          rel="noopener norefferer"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+        <a
+          href="https://linkedin.com/in/joakim-kollerud-723803369"
+          target="_blank"
+          rel="noopener norefferer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/JKollerud"
+          target="_blank"
+          rel="noopener norefferer"
+        >
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
